@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>name</key>
+  <string>MAC Vendor</string>
+
+  <key>icon</key>
+  <string>text:MAC</string>
+
+  <key>actions</key>
+  <array>
+    <dict>
+      <key>title</key>
+      <string>MAC Vendor</string>
+
+      <key>shell script file</key>
+      <string>script.sh</string>
+
+      <key>regex</key>
+      <string>(?:[0-9a-fA-F]{2}[:-]){5}[0-9a-fA-F]{2}|(?:[0-9a-fA-F]{4}\.){2}[0-9a-fA-F]{4}</string>
+
+      <key>after</key>
+      <string>show-result</string>
+    </dict>
+  </array>
+
+  <key>options</key>
+  <array>
+    <dict>
+      <key>identifier</key>
+      <string>show_mac</string>
+      <key>type</key>
+      <string>boolean</string>
+      <key>label</key>
+      <string>MACアドレスを表示</string>
+      <key>default value</key>
+      <true/>
+    </dict>
+    <dict>
+      <key>identifier</key>
+      <string>show_company</string>
+      <key>type</key>
+      <string>boolean</string>
+      <key>label</key>
+      <string>ベンダー名を表示</string>
+      <key>default value</key>
+      <true/>
+    </dict>
+    <dict>
+      <key>identifier</key>
+      <string>show_prefix</string>
+      <key>type</key>
+      <string>boolean</string>
+      <key>label</key>
+      <string>OUI（MACプレフィックス）を表示</string>
+      <key>default value</key>
+      <true/>
+    </dict>
+    <dict>
+      <key>identifier</key>
+      <string>show_country</string>
+      <key>type</key>
+      <string>boolean</string>
+      <key>label</key>
+      <string>国を表示</string>
+      <key>default value</key>
+      <true/>
+    </dict>
+    <dict>
+      <key>identifier</key>
+      <string>show_address</string>
+      <key>type</key>
+      <string>boolean</string>
+      <key>label</key>
+      <string>住所を表示</string>
+      <key>default value</key>
+      <false/>
+    </dict>
+    <dict>
+      <key>identifier</key>
+      <string>show_block_type</string>
+      <key>type</key>
+      <string>boolean</string>
+      <key>label</key>
+      <string>ブロックタイプ（MA-L/M/S）を表示</string>
+      <key>default value</key>
+      <false/>
+    </dict>
+    <dict>
+      <key>identifier</key>
+      <string>show_private_flag</string>
+      <key>type</key>
+      <string>boolean</string>
+      <key>label</key>
+      <string>プライベート/ローカル管理フラグを表示</string>
+      <key>default value</key>
+      <false/>
+    </dict>
+    <dict>
+      <key>identifier</key>
+      <string>copy_to_clipboard</string>
+      <key>type</key>
+      <string>boolean</string>
+      <key>label</key>
+      <string>クリップボードにコピー</string>
+      <key>default value</key>
+      <true/>
+    </dict>
+    <dict>
+      <key>identifier</key>
+      <string>show_dialog</string>
+      <key>type</key>
+      <string>boolean</string>
+      <key>label</key>
+      <string>ダイアログで確認</string>
+      <key>default value</key>
+      <true/>
+    </dict>
+  </array>
+</dict>
+</plist>
