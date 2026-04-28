@@ -1,29 +1,29 @@
 # MAC Vendor - PopClip Extension
 
-MACアドレスのベンダー（製造元）情報を表示するPopClip拡張機能
+A PopClip extension that displays vendor (manufacturer) information for MAC addresses.
 
-## 機能
+## Features
 
-- **ベンダー名**: MACアドレスの製造元会社名
-- **OUI**: MACプレフィックス（先頭3バイト）
-- **国**: 製造元の国
-- **住所**: 製造元の住所（オプション）
-- **ブロックタイプ**: MA-L / MA-M / MA-S（オプション）
-- **プライベートフラグ**: ローカル管理アドレス判定（オプション）
+- **Vendor name**: Manufacturer company of the MAC address
+- **OUI**: MAC prefix (first 3 bytes)
+- **Country**: Manufacturer country
+- **Address**: Manufacturer address (optional)
+- **Block type**: MA-L / MA-M / MA-S (optional)
+- **Private flag**: Locally administered address detection (optional)
 
-## 対応MACアドレス形式
+## Supported MAC formats
 
-- `AA:BB:CC:DD:EE:FF`（コロン区切り）
-- `AA-BB-CC-DD-EE-FF`（ハイフン区切り）
-- `AABB.CCDD.EEFF`（Cisco ドット表記）
+- `AA:BB:CC:DD:EE:FF` (colon-separated)
+- `AA-BB-CC-DD-EE-FF` (hyphen-separated)
+- `AABB.CCDD.EEFF` (Cisco dot notation)
 
-## インストール
+## Installation
 
-### リリース版（推奨）
+### Release (recommended)
 
-[Releases](https://github.com/scaltinov/popclip-macvendor/releases) から `MACVendor.popclipextz` をダウンロードしてダブルクリック。PopClipがインストールを促す。
+Download `MACVendor.popclipextz` from [Releases](https://github.com/scaltinov/popclip-macvendor/releases) and double-click. PopClip will prompt to install.
 
-### ソースから
+### From source
 
 ```bash
 git clone git@github.com:scaltinov/popclip-macvendor.git
@@ -31,37 +31,37 @@ cd popclip-macvendor
 make install
 ```
 
-`make install` は同階層に `MACVendor.popclipext` を生成し、`open` でPopClipのインストールダイアログを起動する。
+`make install` generates `MACVendor.popclipext` next to the source directory and runs `open` to launch PopClip's install dialog.
 
-## 使い方
+## Usage
 
-1. 任意のアプリでMACアドレスを選択
-2. PopClipメニューの「MAC」ボタンをクリック
-3. ベンダー情報をダイアログまたはPopClipポップアップで確認
+1. Select a MAC address in any application
+2. Click the **MAC** button in the PopClip menu
+3. View vendor information in the dialog or PopClip popup
 
-## 設定オプション
+## Options
 
-- **MACアドレスを表示** — デフォルト: ON
-- **ベンダー名を表示** — デフォルト: ON
-- **OUI（MACプレフィックス）を表示** — デフォルト: ON
-- **国を表示** — デフォルト: ON
-- **住所を表示** — デフォルト: OFF
-- **ブロックタイプ（MA-L/M/S）を表示** — デフォルト: OFF
-- **プライベート/ローカル管理フラグを表示** — デフォルト: OFF
-- **クリップボードにコピー** — デフォルト: ON
-- **ダイアログで確認** — デフォルト: ON
+- **Show MAC address** — default: ON
+- **Show vendor name** — default: ON
+- **Show OUI (MAC prefix)** — default: ON
+- **Show country** — default: ON
+- **Show address** — default: OFF
+- **Show block type (MA-L/M/S)** — default: OFF
+- **Show private/local flag** — default: OFF
+- **Copy to clipboard** — default: ON
+- **Show dialog** — default: ON
 
-## 要件
+## Requirements
 
 - macOS
 - PopClip
-- インターネット接続（[api.maclookup.app](https://maclookup.app) 使用）
-- `python3`（macOS標準）
+- Internet connection ([api.maclookup.app](https://maclookup.app))
+- `python3` (bundled with macOS Command Line Tools)
 
-## ライセンス
+## License
 
 MIT
 
-## 作者
+## Author
 
 Created with [Claude Code](https://claude.com/claude-code)

@@ -33,7 +33,7 @@
       <key>type</key>
       <string>boolean</string>
       <key>label</key>
-      <string>MACアドレスを表示</string>
+      <string>Show MAC address</string>
       <key>default value</key>
       <true/>
     </dict>
@@ -43,7 +43,7 @@
       <key>type</key>
       <string>boolean</string>
       <key>label</key>
-      <string>ベンダー名を表示</string>
+      <string>Show vendor name</string>
       <key>default value</key>
       <true/>
     </dict>
@@ -53,7 +53,7 @@
       <key>type</key>
       <string>boolean</string>
       <key>label</key>
-      <string>OUI（MACプレフィックス）を表示</string>
+      <string>Show OUI (MAC prefix)</string>
       <key>default value</key>
       <true/>
     </dict>
@@ -63,7 +63,7 @@
       <key>type</key>
       <string>boolean</string>
       <key>label</key>
-      <string>国を表示</string>
+      <string>Show country</string>
       <key>default value</key>
       <true/>
     </dict>
@@ -73,7 +73,7 @@
       <key>type</key>
       <string>boolean</string>
       <key>label</key>
-      <string>住所を表示</string>
+      <string>Show address</string>
       <key>default value</key>
       <false/>
     </dict>
@@ -83,7 +83,7 @@
       <key>type</key>
       <string>boolean</string>
       <key>label</key>
-      <string>ブロックタイプ（MA-L/M/S）を表示</string>
+      <string>Show block type (MA-L/M/S)</string>
       <key>default value</key>
       <false/>
     </dict>
@@ -93,7 +93,7 @@
       <key>type</key>
       <string>boolean</string>
       <key>label</key>
-      <string>プライベート/ローカル管理フラグを表示</string>
+      <string>Show private/local flag</string>
       <key>default value</key>
       <false/>
     </dict>
@@ -103,7 +103,7 @@
       <key>type</key>
       <string>boolean</string>
       <key>label</key>
-      <string>クリップボードにコピー</string>
+      <string>Copy to clipboard</string>
       <key>default value</key>
       <true/>
     </dict>
@@ -113,7 +113,7 @@
       <key>type</key>
       <string>boolean</string>
       <key>label</key>
-      <string>ダイアログで確認</string>
+      <string>Show dialog</string>
       <key>default value</key>
       <true/>
     </dict>

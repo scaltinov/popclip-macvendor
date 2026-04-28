@@ -111,11 +111,18 @@ fi
 
 if [ -n "$OUTPUT" ]; then
   if [ "$SHOW_DIALOG" = "1" ]; then
-    osascript <<'OSA' "$OUTPUT" >/dev/null 2>&1 &
+    OUTPUT_NL=$(echo -e "$OUTPUT")
+    if [ "$COPY_CLIPBOARD" = "1" ]; then
+      OUTPUT_NL="${OUTPUT_NL}
+
+✔ Copied to clipboard"
+    fi
+    osascript - "$OUTPUT_NL" <<'OSA' >/dev/null
 on run argv
   display dialog item 1 of argv buttons {"OK"} default button "OK" with title "MAC Vendor"
 end run
 OSA
+  else
+    echo -e "$OUTPUT"
   fi
-  echo -e "$OUTPUT"
 fi
